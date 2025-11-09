@@ -211,7 +211,7 @@
 /* --- Buttons --- */
 .button__text {
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
 
     color: var(--bg-color, #fff);
 
@@ -253,8 +253,8 @@
     transition: color 0.5s ease-in-out;
 
     color: var(--bg-color, #fff);
-    fill: var(--bg-color, #fff);
-    /*mix-blend-mode: difference;*/
+    /*fill: var(--bg-color, #fff);*/
+    mix-blend-mode: difference;
 }
 
 /* --- Modals --- */
@@ -348,7 +348,7 @@
 .save__button::before,
 .modal__button::before {
     position: absolute;
-    z-index: 1;
+    /*z-index: 1;*/
     top: 0;
     left: 0;
 
@@ -461,7 +461,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 375px) {
     .main {
         width: 100%;
     }
